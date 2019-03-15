@@ -1,120 +1,128 @@
 <html>
 
     <head>
-       <title> Mi Tienda </title>
-       <link rel="icon" type="image/ico" href="icons/cart.png"/>
+       <title> formulario de registro </title>
+       <link rel="icon" type="image/ico" href="icons/form.png"/>
     </head>
 
 
-     <body bgcolor="62C1B1">  <br>
+     <body bgcolor="">  <br>
        <form name=frm1 action="menu.html" method="POST">
          <h1 align=center> <font face="Trebuchet MS" size="16" color="#627EC1">Formulario de registro</font> </h1>
 
+          <fieldset>
+            <legend>Datos personales</legend>
 
-          <table border="0" align="center">
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Nombres: <font color="codigocolor">*</font></font> </td>
-                  <td> <input type=text name="user"  onblur="aMayusculas(this.value,this.id)" placeholder="Ingrese Nombre" required></td>
+                <table border="0" align="center">
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Nombres: <font color="codigocolor">*</font></font> </td>
+                        <td> <input type="text" style="text-transform:uppercase;" value="" onkeyup="javascript:this.value=this.value.toUpperCase();" placeholder="Ingrese Nombres" required></td>
+                     </tr>
 
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Apellidos:<font color="codigocolor">*</font> </font> </td>
+                        <td> <input type=text name="user" style="text-transform:uppercase;" value="" onkeyup="javascript:this.value=this.value.toUpperCase();" placeholder="Ingrese Apellidos" required></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Apellidos:<font color="codigocolor">*</font> </font> </td>
-                  <td> <input type=text name="user" placeholder="Ingrese Apellidos" required></td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > tipo de identificacion: <font color="codigocolor">*</font> </font> </td>
+                        <td> <select name="OS">
+                                <option value="0">...</option>
+                                <option value="1">TI</option>
+                                <option value="2">CC</option>
+                                <option value="3">CE</option>
+                                <option value="4">RC</option>
+                                <option value="5">Pasaporte</option>
+                              </select>
+                        </td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > tipo de identificacion: <font color="codigocolor">*</font> </font> </td>
-                  <td> <select name="OS">
-                          <option value="1">TI</option>
-                          <option value="2">CC</option>
-                          <option value="3">CE</option>
-                          <option value="4">RC</option>
-                          <option value="5">Pasaporte</option>
-                        </select>
-                  </td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Nro de identificacion: <font color="codigocolor">*</font> </font> </td>
+                        <td> <input type="number" class="input-number" name="user" placeholder="Ingrese identificacion" required></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Nro de identificacion: <font color="codigocolor">*</font> </font> </td>
-                  <td> <input type=text name="user" placeholder="Ingrese identificacion" required></td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Genero: <font color="codigocolor">*</font> </font> </td>
+                        <td> <select name="OS" placeholder="Ingrese identificacion" required>
+                                <option value="0">...</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                                <option value="2">Otro</option>
+                              </select>
+                        </td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Genero: <font color="codigocolor">*</font> </font> </td>
-                  <td> <select name="OS" placeholder="Ingrese identificacion" required>
-                          <option value="1">Masculino</option>
-                          <option value="2">Femenino</option>
-                          <option value="2">Otro</option>
-                        </select>
-                  </td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Telefono: </font> </td>
+                        <td> <input type=text name="user" placeholder="Ingrese Telefono"></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Telefono: </font> </td>
-                  <td> <input type=text name="user" placeholder="Ingrese Telefono"></td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Celular: <font color="codigocolor">*</font> </font> </td>
+                        <td> <input type=text name="user" placeholder="Ingrese Celular" required></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Celular: <font color="codigocolor">*</font> </font> </td>
-                  <td> <input type=text name="user" placeholder="Ingrese Celular" required></td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Departamento nac: <font color="codigocolor">*</font> </font> </td>
+                        <td> <select name="OS" placeholder="Ingrese identificacion" required>
+                                <option value="0">...</option>
+                                <option value="1">AMAZONAS</option>
+                                <option value="2">ANTIOQUIA</option>
+                                <option value="3">BOYACA</option>
+                                <option value="4">CALDAS</option>
+                                <option value="5">CUNDINAMARCA</option>
+                                <option value="6">META</option>
+                                <option value="7">NARIÑO</option>
+                                <option value="8">SANTANDER</option>
+                                <option value="9">VALLE DEL CAUCA</option>
+                                <option value="10">VAUPES</option>
+                              </select>
+                        </td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Departamento nac: <font color="codigocolor">*</font> </font> </td>
-                  <td> <select name="OS" placeholder="Ingrese identificacion" required>
-                          <option value="1">AMAZONAS</option>
-                          <option value="2">ANTIOQUIA</option>
-                          <option value="3">BOYACA</option>
-                          <option value="4">CALDAS</option>
-                          <option value="5">CUNDINAMARCA</option>
-                          <option value="6">META</option>
-                          <option value="7">NARIÑO</option>
-                          <option value="8">SANTANDER</option>
-                          <option value="9">VALLE DEL CAUCA</option>
-                          <option value="10">VAUPES</option>
-                        </select>
-                  </td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Ciudad nal: <font color="codigocolor">*</font> </font> </td>
+                        <td> <select name="OS" placeholder="Ingrese identificacion" required>
+                                <option value="0">...</option>
+                                <option value="1">PASTO</option>
+                                <option value="2">TUQUERRES</option>
+                                <option value="3">LA UNION</option>
+                                <option value="4">TUMACO</option>
+                                <option value="5">IPIALES</option>
+                                <option value="6">POLICARPA</option>
+                                <option value="7">YAQUANQUER</option>
+                                <option value="8">LA FLORIDA</option>
+                                <option value="9">NARIÑO</option>
+                                <option value="10">CONSACA</option>
+                              </select>
+                        </td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Ciudad nal: <font color="codigocolor">*</font> </font> </td>
-                  <td> <select name="OS" placeholder="Ingrese identificacion" required>
-                          <option value="1">PASTO</option>
-                          <option value="2">TUQUERRES</option>
-                          <option value="3">LA UNION</option>
-                          <option value="4">TUMACO</option>
-                          <option value="5">IPIALES</option>
-                          <option value="6">POLICARPA</option>
-                          <option value="7">YAQUANQUER</option>
-                          <option value="8">LA FLORIDA</option>
-                          <option value="9">NARIÑO</option>
-                          <option value="10">CONSACA</option>
-                        </select>
-                  </td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Correo electronico: <font color="codigocolor">*</font></font> </td>
+                        <td> <input type=text name="user" placeholder="Ingrese correo" required></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Correo electronico: <font color="codigocolor">*</font></font> </td>
-                  <td> <input type=text name="user" placeholder="Ingrese correo" required></td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Contraseña: <font color="codigocolor">*</font> </font> </td>
+                        <td><input type="password" name="password" placeholder="Ingrese contraseña" required></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Contraseña: <font color="codigocolor">*</font> </font> </td>
-                  <td><input type="password" name="password" placeholder="Ingrese contraseña" required></td>
-               </tr>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Confirmar contraseña:<font color="codigocolor">*</font> </font> </td>
+                        <td><input type="password" name="password" placeholder="Confirme contraseña" required></td>
+                     </tr>
 
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Confirmar contraseña:<font color="codigocolor">*</font> </font> </td>
-                  <td><input type="password" name="password" placeholder="Confirme contraseña" required></td>
-               </tr>
-
-               <tr>
-                  <td font face="Trebuchet MS" size="3" > Foto: </font> </td>
-                  <td><input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple></td>
-               </tr>
-           </table>
-             <center><input  type="submit" value="Registrarse"></center>
+                     <tr>
+                        <td font face="Trebuchet MS" size="3" > Foto: </font> </td>
+                        <td><input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple></td>
+                     </tr>
+                 </table>
+                  <br>
+                   <center><input  type="submit" value="Registrarse"></center>
         </form>
+            </fieldset>
      </body>
+
 </html>
