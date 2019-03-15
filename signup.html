@@ -39,7 +39,7 @@
 
                      <tr>
                         <td font face="Trebuchet MS" size="3" > Nro de identificacion: <font color="codigocolor">*</font> </font> </td>
-                        <td> <input type="number" class="input-number" name="user" placeholder="Ingrese identificacion" required></td>
+                        <td> <input type="text" value="" maxlength="10"onkeypress="if (event.keyCode < 45 || event.keyCode >57) event.returnValue = false; required" placeholder="Nro Identificacion" required><br></td>
                      </tr>
 
                      <tr>
