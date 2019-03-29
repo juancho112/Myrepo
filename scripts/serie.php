@@ -35,19 +35,47 @@
     echo "<table border =1>";
     $i=$n1;
     while ($i > 0) {
-      echo "<td>".$n1."</td>";
+      echo "<td>".$i."</td>";
       $i--; //$i = $i
     }
     echo "</table>";
 
 
-    $n1=$_POST ["num1"];
+
     echo "Numero :".$n1;
     echo "<table border =1>";
     $i=1;
     while ($i <= $n1) {
       echo "<td>".$i."</td>";
       $i++; //$i = $i
+    }
+    echo "</table>";
+
+
+    echo "Numero :".$n1;
+    echo "<table border =1>";
+    $i=1;
+    while ($i <= $n1) {
+      echo "<tr><td>".$i."</td></tr>";
+
+      $i++; //$i = $i}
+    }
+    $i=$n1;
+    while ($i > 0) {
+      echo "<td>".$i."</td>";
+      $i--; //$i = $i
+    }
+
+
+    echo "</table>";
+
+
+    echo "Numero :".$n1;
+    echo "<table border =1>";
+    $i=$n1;
+    while ($i > 0) {
+      echo "<tr><td>".$i."</td></tr>";
+      $i--; //$i = $i
     }
     echo "</table>";
 
