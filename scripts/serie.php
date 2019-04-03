@@ -28,6 +28,8 @@
 
 <?php
 
+    echo "<br><b>0) Punto extra</b><br>";
+
     $n1=$_POST ["num1"];
 
     echo "Numero :".$n1;
@@ -50,26 +52,30 @@
     }
     echo "</table>";
 
-
-    echo "Numero :".$n1;
-    echo "<table border =1 >";
-    echo "<tr>";
+    echo "<table border=1 style=float:left>";
     $i=1;
-    while ($i <= $n1) {
+    while  ($i<=$n1){
+      if(($i%2)==0){
+       echo "<tr><td>".$i."</td></tr>";
+    }else{
       echo "<tr><td>".$i."</td></tr>";
-
-      $i++; //$i = $i}
+     }
+     $i++;
     }
 
-    $i=$n1;
-    while ($i > 0) {
-      echo "<tr><td>".$i."</td></tr>";
-      $i--; //$i = $i
+    echo "<br></table>";
+    echo "<table border=1 style=float:left:200px >";
+    $i = $n1;
+    while  ($i>0){
+     if(($i%2)==0){
+       echo "<tr><td>".$i."</td></tr>";
     }
-    echo "</tr>";
+    else{
+       echo "<tr><td>".$i."</td></tr>";
+    }
+     $i--;
+    }
     echo "</table>";
-
-
 
     //1
     echo "<b> ------------------------------------------------------------------------------------------------------------</b>";
